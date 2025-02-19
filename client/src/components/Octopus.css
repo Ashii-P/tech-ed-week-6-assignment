@@ -1,0 +1,52 @@
+/* body {
+  display: flex;
+  justify-content: center;
+} */
+img {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  cursor: pointer;
+  animation: float ease-in 2s infinite;
+  z-index: 1;
+}
+img:active {
+  animation: bounce ease-in 0.3s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  img {
+    width: 1300px;
+  }
+}
+
+/* iPhone */
+@media (max-width: 768px) {
+  img {
+    width: 1000px;
+  }
+}

@@ -1,0 +1,40 @@
+.popup-text {
+  position: sticky;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7070ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.2em;
+  font-weight: bold;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  .popup-text {
+    font-size: 1.5em;
+    padding: 20px 40px;
+  }
+}
+
+/* iPhone */
+@media (max-width: 768px) {
+  .popup-text {
+    font-size: 1em;
+    padding: 5px 15px;
+  }
+}

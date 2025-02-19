@@ -1,0 +1,40 @@
+.itemBox {
+  background: rgba(255, 199, 213, 0);
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  color: #0d0628;
+  width: 90%;
+  margin: 3px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.buyBtn {
+  background: #0d0628;
+  border: none;
+  color: #7070ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  .itemBox {
+    width: 1200px;
+  }
+  .buyBtn {
+    font-size: 1.2em;
+  }
+}
+
+/* iPhone */
+@media (max-width: 768px) {
+  .itemBox {
+    width: 100%;
+  }
+  .buyBtn {
+    font-size: 0.8em;
+  }
+}

@@ -1,42 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Luckiest+Guy&family=Pirata+One&family=UnifrakturMaguntia&family=Varela+Round&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: url("https://i.pinimg.com/736x/5f/24/26/5f24265314bf2c6f3a27a48781add464.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  /* overflow: hidden; */
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+footer {
+  display: flex;
+  background: rgba(13, 6, 40, 0.8);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  flex-direction: row;
+  /* margin-left: 200px; */
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.2em;
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  footer {
+    margin-top: 700px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* iPhone */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+    width: 100vw;
+    height: auto;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  footer {
+    font-size: 1.2em;
+    margin-top: 700px;
+    margin-left: 580px;
+  }
 }

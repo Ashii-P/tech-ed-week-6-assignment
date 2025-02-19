@@ -1,0 +1,62 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.htp-modal {
+  background: linear-gradient(135deg, #7070ff, #ba55d3, #ffdae3);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 60%;
+  max-height: 60%;
+  color: #0d0628;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 2em;
+}
+p {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2em;
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  .htp-modal {
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+/* iPhone */
+@media (max-width: 768px) {
+  .htp-modal {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
